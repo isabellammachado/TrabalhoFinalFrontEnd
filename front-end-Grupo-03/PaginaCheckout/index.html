@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../favicon (1).ico" type="image/ico" />
+    <link rel="stylesheet" href="../GlobalStyle.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink&display=swap" rel="stylesheet">
+    <title>CheckOut</title>
+</head>
+
+<body>
+    <h1 id="nomeLoja"> Imaginaria Store</h1>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="../Home/index.html" class="active">🏠 Home</a></li>
+            <li><a href="../PaginaProduto/index.html">📦 Produtos</a></li>
+            <li><a href="../Home/sobre.html">👥 Quem Somos?</a></li>
+            <li><a href="../PaginaCarrinho/index.html">🛒 Meu Carrinho <span id="quantidade-carrinho">0</span></a></li>
+        </ul>
+    </nav>
+
+    <h2 class="finaly">Finalizar Compra</h2>
+
+    <form id="form-checkout">
+
+
+        <div class="quadradinhoDosDados">
+            <div class="dados-usuario">
+                <h3>Dados do Usuário</h3>
+                <div class="form-campo">
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" maxlength="9" placeholder="00000-000" required />
+                </div>
+                <div class="form-campo">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Rua, avenida..." required />
+                </div>
+                <div class="form-campo">
+                    <label for="numero">Número:</label>
+                    <input type="text" id="numero" name="numero" placeholder="Nº" required />
+                </div>
+                <div class="form-campo">
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" id="bairro" name="bairro" placeholder="Bairro" required />
+                </div>
+                <div class="form-campo">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" placeholder="Cidade" required />
+                </div>
+                <div class="form-campo">
+                    <label for="estado">Estado:</label>
+                    <input type="text" id="estado" name="estado" maxlength="2" placeholder="UF" required />
+                </div>
+            </div>
+        </div>
+
+
+        <div class="quadradinhoDoPagamento">
+            <h3 class="metodoPga">Escolha o método de pagamento:</h3>
+
+            <div class="opcao-pagamento">
+                <input type="radio" id="credito" name="metodoPagamento" value="credito" required />
+                <label for="credito">Cartão de Crédito 💳</label>
+            </div>
+            <div class="opcao-pagamento">
+                <input type="radio" id="debito" name="metodoPagamento" value="debito" />
+                <label for="debito">Cartão de Débito 💳</label>
+            </div>
+            <div class="opcao-pagamento">
+                <input type="radio" id="pix" name="metodoPagamento" value="pix" />
+                <label for="pix">Pix 💵</label>
+            </div>
+        </div>
+
+
+        <div class="meioPagamento">
+            <div id="pagamento-cartao" style="display: none;">
+                <h4>Detalhes do Cartão</h4>
+                <div class="form-campo">
+                    <label for="nomeCartao">Nome no Cartão:</label>
+                    <input type="text" id="nomeCartao" maxlength="50" placeholder="Seu nome como aparece no cartão" />
+                </div>
+                <div class="form-campo">
+                    <label for="numeroCartao">Número do Cartão:</label>
+                    <input type="text" id="numeroCartao" maxlength="16" placeholder="0000 0000 0000 0000" />
+                </div>
+                <div class="form-campo">
+                    <label for="validadeCartao">Validade:</label>
+                    <input type="text" id="validadeCartao" maxlength="5" placeholder="MM/AA" />
+                </div>
+                <div class="form-campo">
+                    <label for="cvvCartao">CVV:</label>
+                    <input type="text" id="cvvCartao" maxlength="3" placeholder="123" />
+                </div>
+            </div>
+            <div id="pagamento-pix" style="display: none; text-align: center;">
+                <h4>Chave Pix ou QR Code</h4>
+                <img src="../Assets/qrcode.png" alt="QR Code Pix" style="max-width: 300px;" />
+                <p>Escaneie com seu app de banco para pagar.</p>
+            </div>
+        </div>
+
+        <div id="botaoContainer">
+            <button id="botaoEnviar" type="submit">Enviar</button>
+        </div>
+    </form>
+
+    <footer>
+        <p>
+            📞 Fale Conosco: (422122) 7070-7070 <br /><br />
+            📧 contato@imaginariastore.com
+        </p>
+        <p>⏰ Horário de Atendimento: Sempre & Sempre, A Todo Momento</p>
+        <p>&copy; 2025.2 Imaginaria Store. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

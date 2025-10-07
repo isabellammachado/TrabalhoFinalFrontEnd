@@ -1,0 +1,81 @@
+
+.finaly{
+    text-align: center;
+    color:  #69418B;;
+}
+.metodoPga{
+    font-weight: bold;
+    font-size: 25px;
+    
+}
+.quadradinhoDosDados{
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #ffffff, #f5f7fa);
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+    transition: all 0.3s ease;
+}
+.quadradinhoDoPagamento {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #ffffff, #f5f7fa);
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.pagamento-cartao{
+     max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #ffffff, #f5f7fa);
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+    transition: all 0.3s ease;
+}
+.opcao-pagamento{
+    align-items: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.meioPagamento{
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #ffffff, #f5f7fa);
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+    transition: all 0.3s ease;
+}
+button{
+    background-color:#ffffff;
+    color:#69418B;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.form-campo{
+    font-size: 15px;
+    font-weight: bolder;
+}
+#botaoContainer {
+  display: flex;
+  justify-content: center; 
+  width: 100%;
+}

@@ -1,0 +1,146 @@
+/* === SEÇÃO SOBRE === */
+.sobre-section {
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  padding: 60px 20px;
+  text-align: center;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+.sobre-section h2 {
+  font-size: 2rem;
+  color: #4a4a8a;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.sobre-section p {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* === SEÇÃO DO TIME === */
+.time-section {
+  margin-top: 50px;
+}
+
+.time-section h3 {
+  color: #4a4a8a;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+}
+
+.time-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.time-card {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 280px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.time-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.time-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.time-card h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.time-card p {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* === SEÇÃO DE VALORES === */
+.valores-section {
+  margin-top: 60px;
+}
+
+.valores-section h3 {
+  font-size: 1.8rem;
+  color: #4a4a8a;
+  margin-bottom: 25px;
+}
+
+.valores-section ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.valores-section li {
+  background: #ffffff;
+  border-radius: 50px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  color: #4a4a8a;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.valores-section li:hover {
+  background: #4a4a8a;
+  color: white;
+  transform: translateY(-4px);
+}
+
+/* === RESPONSIVIDADE === */
+@media (max-width: 768px) {
+  .sobre-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .sobre-section p {
+    font-size: 1rem;
+  }
+
+  .time-card img {
+    height: 180px;
+  }
+
+  .valores-section li {
+    font-size: 0.95rem;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sobre-section {
+    padding: 40px 15px;
+  }
+
+  .time-card {
+    max-width: 100%;
+  }
+
+  .valores-section ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Imaginaria</title>
+    <link rel="stylesheet" href="../GlobalStyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1 id="nomeLoja">🛍️ IMAGINARIA STORE</h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="../Home/index.html" class="active">🏠 Home</a></li>
+                <li><a href="../PaginaProduto/index.html">📦 Produtos</a></li>
+                <li><a href="../PaginaCadastro/index.html">🤸‍♂️ Cadastro</a></li>
+                <li><a href="../Home/sobre.html">👥 Quem Somos?</a></li>
+                <li><a href="../PaginaCarrinho/index.html">🛒 Meu Carrinho <span id="carrinho-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Ticker de Promoções -->
+    <div class="ticker-container">
+        <div class="ticker-wrapper">
+            <div class="ticker-item"><span>🔥</span> PROMOÇÃO RELÂMPAGO: 5% DE DESCONTO NO LANÇAMENTO DO MELHOR CHEFE DO MUNDO</div>
+            <div class="ticker-item"><span>🚚</span> FRETE GRÁTIS PARA TODO BRASIL!</div>
+            <div class="ticker-item"><span>💳</span> PARCELE EM ATÉ 12X SEM JUROS!</div>
+            <div class="ticker-item"><span>⭐</span> PRODUTOS LOUCOS TODA SEMANA!</div>
+        </div>
+    </div>
+
+    <!-- Seção Hero -->
+    <section class="hero-section">
+        <h1>🌟 BEM-VINDO À NOSSA LOJA! 🌟</h1>
+        <h3>AQUI VOCÊ ENCONTRA OS MELHORES PRODUTOS IMAGINÁRIOS PARA ADULTOS CANSADOS DE VERDADE</h3>
+    </section>
+
+    <!-- Produtos em Destaque -->
+    <section id="ofertas" class="produtos-section">
+        <h2>🎯 PRODUTOS EM DESTAQUE</h2>
+        <div class="produtos-grid">
+            <!-- Produto 1 -->
+            <div class="produto-card">
+                <div class="destaque">MAIS VENDIDOS</div>
+                <img src="../Assets/estagioIcarly.jpeg" alt="Estágio que paga sem trabalhar" class="produto-img">
+                <h3>ESTÁGIO QUE PAGA SEM TRABALHAR</h3>
+                <p>Já pensou você recebendo sem trabalhar? Por menos de um salário mínimo, parcelado em 12x SEM JUROS.</p>
+                <div class="preco">R$ 999,00</div>
+                <button class="btn-comprar" data-produto-id="1" data-produto-nome="Estágio que paga sem trabalhar" data-produto-preco="999.00">
+                    🛒 COMPRAR AGORA
+                </button>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="produto-card">
+                <div class="destaque">LANÇAMENTO</div>
+                <img src="../Assets/BestBoss.jpeg" alt="Melhor Chefe do Mundo" class="produto-img">
+               <br><br>
+                <h3>O MELHOR CHEFE DO MUNDO</h3>
+                <p>O chefe que todos amam odiar.</p>
+                <span class="preco-antigo"><s>R$999,00</s></span>
+                <p class="preco">R$949,50</p>
+                <button class="btn-comprar" data-produto-id="2" data-produto-nome="Melhor chefe do mundo" data-produto-preco="949.50">
+                    🛒 COMPRAR AGORA
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features-section">
+        <h2>✨ POR QUE ESCOLHER NOSSA LOJA?</h2>
+        <div class="feature-grid">
+            <div class="feature-card"><div class="icon">🚚</div><h3>Entrega Rápida</h3><p>Imaginou? Pagou, Chegou. TUDO EM QUESTÃO DE SEGUNDOS.</p></div>
+            <div class="feature-card"><div class="icon">🔒</div><h3>Compra Segura</h3><p>Seus dados protegidos com criptografia de última geração.</p></div>
+            <div class="feature-card"><div class="icon">💎</div><h3>Qualidade Garantida</h3><p>Produtos testados e aprovados com garantia estendida.</p></div>
+            <div class="feature-card"><div class="icon">💬</div><h3>Suporte 24/7</h3><p>Equipe especialista pronta para te ajudar a qualquer momento.</p></div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>📞 Fale Conosco: (422122) 7070-7070 <br>📧 contato@imaginariastore.com</p>
+        <p>⏰ Horário de Atendimento: Sempre & Sempre, A Todo Momento</p>
+        <p>&copy; 2025.2 Imaginaria Store. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

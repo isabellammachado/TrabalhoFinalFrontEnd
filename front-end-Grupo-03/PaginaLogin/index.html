@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Imaginaria Store</title>
+    <link rel="icon" href="../favicon (1).ico" type="image/ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../GlobalStyle.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="nomeLoja">🛍️ IMAGINARIA STORE</h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="../Home/index.html">🏠 Home</a></li>
+                <li><a href="../PaginaProduto/index.html">📦 Produtos</a></li>
+                <li><a href="../PaginaCadastro/index.html">🤸‍♂️ Cadastro</a></li>
+                <li><a href="../Home/sobre.html">👥 Quem Somos?</a></li>
+                <li><a href="../PaginaCarrinho/index.html">🛒 Meu Carrinho <span id="carrinho-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-login">
+        <div class="card-login">
+            <h1>LOGIN</h1>
+
+            <form id="loginForm">
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Seu usuário ou e-mail">
+                    <span class="erro-campo" id="erro-usuario"></span>
+                </div>
+
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Senha">
+                    <span class="erro-campo" id="erro-senha"></span>
+                </div>
+
+                <p class="cadastrese"><a href="../PaginaCadastro/index.html">Não tem login? Cadastre-se.</a></p>
+                <button type="submit" class="btn-login">Entrar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>📞 Fale Conosco: (422122) 7070-7070<br><br>📧 contato@imaginariastore.com</p>
+        <p>⏰ Horário de Atendimento: Sempre & Sempre, A Todo Momento</p>
+        <p>&copy; 2025.2 Imaginaria Store. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho de Compras</title>
+  <link rel="stylesheet" href="../GlobalStyle.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="./script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+    <header>
+        <h1 id="nomeLoja">🛍️ IMAGINARIA STORE </h1>
+        
+        <!-- Menu de Navegação -->
+        <nav class="menu">
+            <ul>
+                <li><a href="../Home/index..html" class="active">🏠 Home</a></li>
+                <li><a href="../PaginaProduto/index.html">📦 Produtos</a></li>
+                <li><a href="../Home/sobre.html">👥 Quem Somos?</a></li>
+                <li><a href="../PaginaCadastro/index.html">  🤸‍♂️ Cadastro </a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <!-- Conteúdo -->
+  <main class="container">
+    <h1>Seu Carrinho</h1>
+    <div class="layout-carrinho">
+
+      <!-- Lista de produtos -->
+      <div class="itens-carrinho">
+        <table>
+          <thead>
+            <tr>
+              <th>Produto</th>
+              <th>Preço</th>
+              <th>Quantidade</th>
+              <th>Total</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Resumo da compra -->
+      <aside class="resumo-compra">
+        <h2>Resumo da compra</h2>
+        <div class="linha-resumo">
+          <span>Subtotal</span>
+          <span>R$418</span>
+        </div>
+        <div class="linha-resumo">
+          <span>Frete</span>
+          <span>Gratis</span>
+        </div>
+
+        <hr>
+        <div class="linha-resumo total">
+          <span>Total</span>
+          <span>R$418</span>
+        </div>
+        <a href="../PaginaLogin/index.html">
+        <button class="botao-finalizar">Finalizar</button>
+        </a>
+      </aside>
+
+    </div>
+  </main>
+</body>
+<footer>
+        <p> 
+            📞 Fale Conosco: (422122) 7070-7070 <br><br>📧 contato@imaginariastore.com
+         </p>
+        <p>⏰ Horário de Atendimento: Sempre & Sempre, A Todo Momento </p>
+        <p>&copy; 2025.2 Imaginaria Store. Todos os direitos reservados.</p>
+    </footer>
+
+</html>

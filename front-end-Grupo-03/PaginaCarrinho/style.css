@@ -1,0 +1,213 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: #f7f7f7;
+  color: #333;
+  background-image: url(./Assets/fundoColorido.jpg);
+  background-size: cover;
+}
+
+
+.menu {
+  background-color: #D0F4BD;
+  width: 100%;
+  padding: 5px;
+  border-radius: 15px;
+  margin: 15px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.layout-carrinho {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.itens-carrinho {
+  flex: 2;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  overflow-x: auto; 
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 400px; 
+}
+
+thead th {
+  text-align: left;
+  padding: 10px;
+  color: #666;
+  font-size: 0.9em;
+}
+
+tbody td {
+  padding: 15px 10px;
+  border-top: 1px solid #eee;
+  vertical-align: middle;
+}
+
+.info-produto {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nome-produto {
+  font-weight: bold;
+}
+
+.cor-produto {
+  font-size: 0.8em;
+  color: #777;
+}
+
+
+.botao-quantidade {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  background: #f7f7f7;
+  cursor: pointer;
+}
+
+.botao-remover {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+
+.resumo-compra {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.resumo-compra h2 {
+  margin-bottom: 20px;
+}
+
+.linha-resumo {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.linha-resumo.total {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.botao-finalizar {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: green;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 25px;
+  margin: 50px 0 20px;
+  background: linear-gradient(135deg, #D0F4BD, #B5C0F5);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+footer p {
+  margin: 12px 0;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+
+@media (max-width: 900px) {
+  .layout-carrinho {
+    flex-direction: column;
+  }
+
+  .resumo-compra {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+ 
+  .layout-carrinho {
+    flex-direction: column;
+  }
+
+  .itens-carrinho {
+    padding: 10px;
+  }
+
+ 
+  thead {
+    display: none; 
+  }
+
+  table {
+    display: block;
+    width: 100%;
+  }
+
+  tbody td {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+  }
+
+  tbody td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #555;
+  }
+
+  .info-produto {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .botao-finalizar {
+    font-size: 1rem;
+    padding: 14px;
+  }
+}

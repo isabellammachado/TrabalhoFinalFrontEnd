@@ -1,0 +1,131 @@
+
+.main-login {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.card-login {
+    background-color: #F9FBFB;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-login h1 {
+    margin-bottom: 20px;
+    color:purple;
+}
+
+.textfield {
+     width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.textfield label {
+    color: #222;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.textfield input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #fff;
+    color: #222;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.textfield input:focus {
+    border-color: purple;
+    box-shadow: 0 0 0 2px rgba(128, 0, 128, 0.2);
+    outline: none;
+}
+
+.btn-login {
+    width: 90%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: purple;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s, transform 0.1s;
+}
+
+.btn-login:hover {
+    background: #6a0dad;
+    transform: translateY(-1px);
+}
+
+.btn-login:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.cadastrese{
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    margin: -10px 0 5px 0;
+}
+
+.cadastrese a {
+    color: purple;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.cadastro a:hover {
+    text-decoration: underline;
+}
+
+.erro-campo {
+    color: #d9534f;
+    font-size: 13px;
+    min-height: 18px;
+    text-align: left;
+    margin-top: 4px;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        justify-content: center;
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+    #nomeLoja {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .menu ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .card-login {
+        padding: 30px 20px;
+    }
+}
